@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Turn off module update
+ */
+
+/**
+ * Implements hook_update_projects_alter().
+ */
+function turn_off_module_update_update_projects_alter(&$projects) {
+  if (isset($projects['media'])) {
+    unset($projects['media']);
+  }
+}

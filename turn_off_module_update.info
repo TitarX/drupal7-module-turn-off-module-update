@@ -1,0 +1,4 @@
+name = Turn off module update
+description = Turn off module update
+package = Extra
+core = 7.x
